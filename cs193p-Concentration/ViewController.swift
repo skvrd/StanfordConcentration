@@ -15,7 +15,13 @@ class ViewController: UIViewController {
         flipCard(withEmoji: "👻", on: sender)
     }
     
+    @IBAction func touchSecondCard(_ sender: UIButton) {
+        flipCard(withEmoji: "🎃", on: sender)
+    }
+    
     func flipCard(withEmoji emoji: String, on button: UIButton) {
+        print("flip card \(emoji)")
+        
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControl.State.normal)
             button.backgroundColor = #colorLiteral(red: 0.9607843137, green: 0.5450980392, blue: 0, alpha: 1)
