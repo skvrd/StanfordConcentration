@@ -15,4 +15,12 @@ class Concentraion
     func chooseCard(at index: Int) {
         
     }
+    
+    init(numberOfPairOfCards: Int) {
+        for _ in 1...numberOfPairOfCards {
+            let card = Card()
+            cards += [card, card]
+        }
+        cards.shuffle()
+    }
 }
