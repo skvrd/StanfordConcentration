@@ -37,6 +37,7 @@ class ViewController: UIViewController {
                 button.setTitle(emoji(for: card), for: UIControl.State.normal)
                 button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             } else {
+                print("Card with index \(index) isMatched = \(card.isMatched)")
                 button.setTitle("", for: UIControl.State.normal)
                 button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.9607843137, green: 0.5450980392, blue: 0, alpha: 0) : #colorLiteral(red: 0.9607843137, green: 0.5450980392, blue: 0, alpha: 1)
             }
