@@ -5,14 +5,14 @@
 //  Created by Grigoriy Romanyuk on 3/6/19.
 //  Copyright © 2019 Grigoriy Romanyuk. All rights reserved.
 //
-
+ 
 import Foundation
 
 class Concentraion
 {
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     
-    var indexOfOneAndOnlyFaceUpCard: Int? {
+    private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             var foundIndex: Int?
             for index in cards.indices {
