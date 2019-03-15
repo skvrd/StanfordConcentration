@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52564F51222F60E5002E2623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52564F50222F60E5002E2623 /* AppDelegate.swift */; };
-		52564F53222F60E5002E2623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52564F52222F60E5002E2623 /* ViewController.swift */; };
+		52564F53222F60E5002E2623 /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52564F52222F60E5002E2623 /* ConcentrationViewController.swift */; };
 		52564F56222F60E5002E2623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52564F54222F60E5002E2623 /* Main.storyboard */; };
 		52564F58222F60E6002E2623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52564F57222F60E6002E2623 /* Assets.xcassets */; };
 		52564F5B222F60E6002E2623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52564F59222F60E6002E2623 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		52564F4D222F60E5002E2623 /* cs193p-Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs193p-Concentration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52564F50222F60E5002E2623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52564F52222F60E5002E2623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52564F52222F60E5002E2623 /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		52564F55222F60E5002E2623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52564F57222F60E6002E2623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52564F5A222F60E6002E2623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				52564F632230BBFB002E2623 /* Concentration.swift */,
 				52564F652230BCBD002E2623 /* Card.swift */,
 				52564F62222F60F6002E2623 /* Supporting Files */,
-				52564F52222F60E5002E2623 /* ViewController.swift */,
+				52564F52222F60E5002E2623 /* ConcentrationViewController.swift */,
 				52564F54222F60E5002E2623 /* Main.storyboard */,
 				52564F5C222F60E6002E2623 /* Info.plist */,
 			);
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52564F53222F60E5002E2623 /* ViewController.swift in Sources */,
+				52564F53222F60E5002E2623 /* ConcentrationViewController.swift in Sources */,
 				52564F51222F60E5002E2623 /* AppDelegate.swift in Sources */,
 				52564F642230BBFB002E2623 /* Concentration.swift in Sources */,
 				52564F662230BCBD002E2623 /* Card.swift in Sources */,
@@ -297,9 +297,11 @@
 		52564F60222F60E6002E2623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WX597J492;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = "cs193p-Concentration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,9 +317,11 @@
 		52564F61222F60E6002E2623 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WX597J492;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = "cs193p-Concentration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
