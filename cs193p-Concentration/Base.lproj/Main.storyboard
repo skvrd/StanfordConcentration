@@ -66,7 +66,7 @@
         <scene sceneID="aAl-Ao-U8T">
             <objects>
                 <viewController id="5XW-Cr-8ua" customClass="ConcentrationThemeChooserViewController" customModule="cs193p_Concentration" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="nrz-UE-STm">
+                    <view key="view" contentMode="scaleToFill" id="nrz-UE-STm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -78,7 +78,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Sports"/>
                                         <connections>
-                                            <action selector="chooseTheme:" destination="5XW-Cr-8ua" eventType="touchUpInside" id="zzb-kW-74J"/>
+                                            <action selector="changeTheme:" destination="5XW-Cr-8ua" eventType="touchUpInside" id="DDP-FZ-G6d"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-66-kd1">
@@ -86,7 +86,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Faces"/>
                                         <connections>
-                                            <action selector="chooseTheme:" destination="5XW-Cr-8ua" eventType="touchUpInside" id="i6b-r8-rLr"/>
+                                            <action selector="changeTheme:" destination="5XW-Cr-8ua" eventType="touchUpInside" id="8mk-UU-fG7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-z1-2wN">
@@ -94,7 +94,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Animals"/>
                                         <connections>
-                                            <action selector="chooseTheme:" destination="5XW-Cr-8ua" eventType="touchUpInside" id="SIa-8W-6hE"/>
+                                            <action selector="changeTheme:" destination="5XW-Cr-8ua" eventType="touchUpInside" id="YEp-ow-UC2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,7 +109,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rGt-I3-C85"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose theme" id="BXu-vf-1Mg"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Choose theme" id="Qx6-zl-2LJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5OX-ew-hqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -312,6 +312,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BXu-vf-1Mg"/>
+        <segue reference="Qx6-zl-2LJ"/>
     </inferredMetricsTieBreakers>
 </document>

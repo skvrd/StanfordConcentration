@@ -16,10 +16,22 @@ class ConcentrationThemeChooserViewController: UIViewController {
                   "Faces":"😁🤩😒🤒😷🤮😡😭😠🤢😘😩☹️😓"]
     // MARK: - Navigation
 
-    @IBAction func chooseTheme(_ sender: Any) {
-        performSegue(withIdentifier: "Choose theme", sender: sender)
+
+    
+    private var splitViewDetailConcentrationViewController: ConcentrationViewController? {
+        
+        return splitViewController?.viewControllers.last as? ConcentrationViewController
     }
     
+    @IBAction func changeTheme(_ sender: Any) {
+        if let cvc = splitViewDetailConcentrationViewController {
+            if let themeName = (sender as? UIButton)?.currentTitle, let theme = themes[themeName] {
+                cvc.theme = theme
+            }
+        } else {
+            performSegue(withIdentifier: "Choose theme", sender: sender)
+        }
+    }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

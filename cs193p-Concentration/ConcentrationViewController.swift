@@ -70,6 +70,7 @@ class ConcentrationViewController: UIViewController {
             emojiChoices = theme ?? ""
             emoji = [:]
             updateViewFromModel()
+            print ("asdasd")
         }
     }
     
